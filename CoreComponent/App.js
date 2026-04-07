@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { StyleSheet, Text, View, Button, Modal } from 'react-native';
+import { StyleSheet, Text, View, Button, Modal, StatusBar } from 'react-native';
 
 export default function App() {
   const [IsModalVisiable, setIsModalVisible] = useState(false);
@@ -28,6 +28,8 @@ export default function App() {
           />
         </View>
       </Modal>
+
+      <StatusBar backgroundColor="lightgreen" barStyle="dark-content" hidden/>
     </View>
   );
 }
